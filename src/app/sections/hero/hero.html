@@ -1,0 +1,50 @@
+<div class="container hero-grid">
+  <div class="hero-text">
+    <p class="eyebrow label">
+      <span class="dot" aria-hidden="true"></span>{{ title() }} · {{ profile.person.company }}
+    </p>
+    <h1 id="hero-title">
+      <span>{{ nameParts[0] }}</span
+      ><span>{{ nameParts.slice(1).join(' ') }}</span
+      ><span class="sr-only">, {{ title() }}</span>
+    </h1>
+    <p class="lede">{{ profile.hero.lede[locale.lang()] }}</p>
+    <div class="ctas">
+      <a class="btn btn-primary" [href]="'mailto:' + profile.person.email"
+        ><svg appIcon="mail"></svg>{{ locale.text().cta_contact }}</a
+      >
+      <a appExternalLink class="btn btn-ghost" [href]="profile.person.linkedin"
+        ><svg appIcon="linkedin"></svg>LinkedIn</a
+      >
+      <a appCvLink class="btn btn-ghost"></a>
+    </div>
+    <dl class="facts">
+      @for (fact of facts(); track fact.label) {
+        <div>
+          <dt class="label">{{ fact.label }}</dt>
+          <dd>{{ fact.value }}</dd>
+        </div>
+      }
+    </dl>
+  </div>
+  <figure #portrait class="portrait">
+    <span class="shape shape-ochre" [appParallax]="-0.06" aria-hidden="true"></span>
+    <span class="shape shape-green" [appParallax]="0.05" aria-hidden="true"></span>
+    <!-- offline os <source> ficam sem srcset (só o <img> é embutido) -->
+    <picture>
+      <source type="image/avif" [attr.srcset]="srcset('avif')" [attr.sizes]="sizes()" />
+      <source type="image/webp" [attr.srcset]="srcset('webp')" [attr.sizes]="sizes()" />
+      <img
+        [src]="assets.url('/assets/img/kaua-braccio-640.jpg')"
+        [attr.srcset]="srcset('jpg')"
+        [attr.sizes]="sizes()"
+        width="640"
+        height="800"
+        [alt]="locale.text().photo_alt"
+        fetchpriority="high"
+      />
+    </picture>
+    <span class="shape shape-purple" [appParallax]="-0.1" aria-hidden="true"></span>
+    <span class="shape shape-blue" [appParallax]="0.03" aria-hidden="true"></span>
+  </figure>
+</div>

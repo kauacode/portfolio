@@ -1,0 +1,55 @@
+<div class="container">
+  <div appSectionHead="education" color="green" [heading]="locale.text().edu_title"></div>
+  <ol class="edu">
+    @for (edu of profile.education; track edu.school) {
+      <li class="edu-card" [style.--c]="'var(--' + edu.color + ')'">
+        <span class="edu-shape" aria-hidden="true"></span>
+        <div class="edu-top">
+          <span class="label">{{ edu.kind[locale.lang()] }}</span>
+          @if (edu.inProgress) {
+            <span class="status is-progress"
+              ><span class="pulse" aria-hidden="true"></span>{{ locale.text().edu_in_progress }} ·
+              {{ locale.i18n().fmt(locale.text().edu_expected, { year: edu.end }) }}</span
+            >
+          } @else {
+            <span class="status is-done"
+              ><span class="status-icon" aria-hidden="true"><svg appIcon="check"></svg></span
+              >{{ locale.i18n().fmt(locale.text().edu_completed, { year: edu.end }) }}</span
+            >
+          }
+        </div>
+        <p class="edu-years">
+          <time [attr.datetime]="edu.start">{{ edu.start }}</time> –
+          <time [attr.datetime]="edu.end">{{ edu.end }}</time>
+        </p>
+        <h3>{{ edu.degree[locale.lang()] }}</h3>
+        <p class="edu-place">{{ place(edu) }}</p>
+        @if (edu.summary) {
+          <p class="edu-summary">{{ edu.summary[locale.lang()] }}</p>
+        }
+        @if (edu.topics.length) {
+          <div class="edu-topics">
+            <p class="label">{{ locale.text().edu_topics }}</p>
+            <ul>
+              @for (topic of edu.topics; track $index) {
+                <li>{{ topic[locale.lang()] }}</li>
+              }
+            </ul>
+          </div>
+        }
+      </li>
+    }
+  </ol>
+  <div class="langs-block">
+    <h3 class="label">{{ locale.text().languages_title }}</h3>
+    <ul class="lang-rows">
+      @for (language of profile.languages; track $index) {
+        <li class="lang-row">
+          <span [appMarker]="language.color"></span>
+          <span class="lang-name">{{ language.name[locale.lang()] }}</span>
+          <span class="lang-level">{{ language.level[locale.lang()] }}</span>
+        </li>
+      }
+    </ul>
+  </div>
+</div>

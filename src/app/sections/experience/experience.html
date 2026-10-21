@@ -1,0 +1,58 @@
+<div class="container">
+  <div appSectionHead="experience" color="blue" [heading]="locale.text().xp_title"></div>
+  <ol class="xp">
+    @for (company of companies; track company.name) {
+      <li class="xp-co" [style.--c]="'var(--' + company.color + ')'">
+        <div class="xp-co-head">
+          <span [appMarker]="company.color"></span>
+          <h3>
+            @if (company.url) {
+              <a appExternalLink [href]="company.url">{{ company.displayName }}</a>
+            } @else {
+              {{ company.displayName }}
+            }
+          </h3>
+          <p class="xp-co-meta">
+            @if (company.short) {
+              <span>{{ company.name }}</span>
+            }
+            <span>{{ company.location[locale.lang()] }}</span
+            ><span [appPeriodRange]="company.period"></span>
+          </p>
+        </div>
+        <ol class="roles">
+          @for (role of company.roles; track $index) {
+            <li class="role" [class.is-current]="role.period.isCurrent">
+              <div class="role-head">
+                @if (role.period.isCurrent) {
+                  <span class="badge-current">{{ locale.text().current }}</span>
+                }
+                <h4>{{ role.title[locale.lang()] }}</h4>
+                <p class="role-meta">
+                  <span>{{ role.type[locale.lang()] }}</span
+                  ><span class="role-when" [appPeriodRange]="role.period"></span>
+                </p>
+              </div>
+              @if (role.summary) {
+                <p class="summary">{{ role.summary[locale.lang()] }}</p>
+              }
+              @if (role.bullets.length) {
+                <ul>
+                  @for (bullet of role.bullets; track $index) {
+                    <li>{{ bullet[locale.lang()] }}</li>
+                  }
+                </ul>
+              }
+              @if (role.stack.length) {
+                <p class="stack">
+                  <b>{{ locale.text().stack }}</b
+                  >{{ stack(role.stack) }}
+                </p>
+              }
+            </li>
+          }
+        </ol>
+      </li>
+    }
+  </ol>
+</div>

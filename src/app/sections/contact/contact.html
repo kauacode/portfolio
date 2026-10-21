@@ -1,0 +1,65 @@
+<div class="container">
+  <div class="contact-poster">
+    <div class="contact-intro">
+      <p class="label contact-eyebrow">{{ locale.text().nav.contact }}</p>
+      <h2 [id]="locale.sectionId('contact') + '-title'">{{ locale.text().contact_title }}</h2>
+      <p class="contact-text">{{ locale.text().contact_text }}</p>
+      <p class="contact-place"><span class="dot" aria-hidden="true"></span>{{ place() }}</p>
+    </div>
+    <div class="contact-art" aria-hidden="true">
+      <span class="ca ca-blue"></span><span class="ca ca-green"></span>
+      <picture>
+        <source
+          type="image/avif"
+          [attr.srcset]="assets.offline ? null : '/assets/img/kaua-braccio-480.avif'"
+        />
+        <source
+          type="image/webp"
+          [attr.srcset]="assets.offline ? null : '/assets/img/kaua-braccio-480.webp'"
+        />
+        <img
+          [src]="assets.url('/assets/img/kaua-braccio-480.jpg')"
+          width="480"
+          height="600"
+          alt=""
+          loading="lazy"
+          decoding="async"
+        />
+      </picture>
+      <span class="ca ca-purple"></span><span class="ca ca-ink"></span>
+    </div>
+    <ul class="channels">
+      <li class="channel channel-email">
+        <span class="channel-label">{{ locale.text().email_label }}</span>
+        <a #emailLink class="channel-value email" [href]="'mailto:' + person.email"
+          >{{ emailParts[0] }}<wbr />&#64;{{ emailParts[1] }}</a
+        >
+        <button class="copy-btn" type="button" [hidden]="!canCopy()" (click)="copyEmail()">
+          {{ locale.text().copy }}
+        </button>
+        <span class="copy-status" role="status" aria-live="polite">{{ copyStatus() }}</span>
+      </li>
+      <li>
+        <a appExternalLink class="channel" [href]="person.linkedin"
+          ><span class="channel-label">LinkedIn</span><span class="channel-value">{{ linkedinHandle }}</span
+          ><span class="channel-icon"><svg appIcon="arrow"></svg></span
+        ></a>
+      </li>
+      <li>
+        <a
+          class="channel"
+          [href]="cv.href()"
+          [attr.download]="cv.fileName()"
+          [attr.hreflang]="cv.otherLanguage() ? 'pt-BR' : null"
+          ><span class="channel-label">{{ locale.text().contact_cv_label }}</span
+          ><span class="channel-value"
+            >{{ locale.text().cta_cv }} · {{ locale.text().cv_format }}
+            @if (cv.otherLanguage()) {
+              <span class="sr-only"> ({{ locale.text().cv_other_lang }})</span>
+            }</span
+          ><span class="channel-icon"><svg appIcon="download"></svg></span
+        ></a>
+      </li>
+    </ul>
+  </div>
+</div>
