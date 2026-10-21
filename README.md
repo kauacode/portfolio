@@ -107,7 +107,7 @@ Tudo fica em `content/profile.json`. Cada texto aceita `{"pt": "...", "en": "...
 
 ## Deploy
 
-Antes do primeiro deploy, defina o domínio final em `site.url` (`content/profile.json`). Ele é usado em canonical, hreflang, Open Graph, sitemap e JSON-LD. O valor atual, `https://kauabraccio.dev`, é provisório. O site usa caminhos absolutos, então deve ser servido na raiz de um domínio.
+O endereço público fica em `site.url` (`content/profile.json`) e é usado em canonical, hreflang, Open Graph, sitemap e JSON-LD. Se o site mudar de domínio, basta trocar esse valor. O site usa caminhos absolutos, então deve ser servido na raiz de um domínio.
 
 O site é publicado na Cloudflare (Workers com arquivos estáticos), configurada em `wrangler.jsonc`. O repositório está conectado pelo Workers Builds: cada push na `master` roda `npm run build` e `npx wrangler deploy`, e o `_headers` gerado no build é aplicado.
 
