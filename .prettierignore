@@ -1,0 +1,10 @@
+dist
+offline
+.angular
+.qa
+coverage
+node_modules
+public
+media
+fonts-src
+package-lock.json

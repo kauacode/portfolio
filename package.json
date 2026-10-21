@@ -1,0 +1,54 @@
+{
+  "name": "portfolio-kaua-braccio",
+  "version": "2.0.0",
+  "description": "Portfólio de Kauã Braccio em Angular, pré-renderizado como site estático (pt-BR e inglês).",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.2"
+  },
+  "scripts": {
+    "start": "ng serve",
+    "build": "ng build && node scripts/postbuild.ts",
+    "test": "ng test --watch=false",
+    "test:dist": "node --test \"tests/*.test.ts\"",
+    "lint": "ng lint",
+    "typecheck": "tsc -p tsconfig.node.json",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "npm run lint && npm run typecheck && npm run format:check && npm test && npm run build && npm run test:dist",
+    "offline": "npm run build && node scripts/offline.ts",
+    "assets": "node scripts/assets.ts",
+    "shots": "node scripts/shots.ts"
+  },
+  "packageManager": "npm@11.19.0",
+  "dependencies": {
+    "@angular/common": "^22.2.0",
+    "@angular/compiler": "^22.2.0",
+    "@angular/core": "^22.2.0",
+    "@angular/platform-browser": "^22.2.0",
+    "@angular/platform-server": "^22.2.0",
+    "@angular/router": "^22.2.0",
+    "@angular/ssr": "^22.2.3",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "@angular/build": "^22.2.3",
+    "@angular/cli": "^22.2.3",
+    "@angular/compiler-cli": "^22.2.0",
+    "@eslint/js": "^10.0.1",
+    "@types/jsdom": "^30.0.0",
+    "@types/node": "^24.0.0",
+    "angular-eslint": "22.6.0",
+    "eslint": "^10.12.0",
+    "jsdom": "^30.0.0",
+    "playwright-core": "^1.64.1",
+    "prettier": "^3.8.1",
+    "sharp": "^0.35.5",
+    "typescript": "~6.0.2",
+    "typescript-eslint": "8.71.0",
+    "vitest": "^5.0.0"
+  }
+}

@@ -1,0 +1,17 @@
+/* Scripts de build e testes da saída (scripts/, tests/), executados direto pelo Node com remoção de tipos. */
+{
+  "compilerOptions": {
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "target": "ES2024",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "allowImportingTsExtensions": true,
+    "erasableSyntaxOnly": true,
+    "verbatimModuleSyntax": true,
+    "resolveJsonModule": true,
+    "types": ["node"]
+  },
+  "include": ["scripts/**/*.ts", "tests/**/*.ts"]
+}

@@ -1,0 +1,22 @@
+# Saída do build
+/dist
+/offline
+/.angular/cache
+/out-tsc
+/coverage
+
+# Node
+/node_modules
+npm-debug.log
+
+# Capturas de QA e fontes originais (o subset publicado fica em public/assets/fonts)
+/.qa
+/fonts-src
+
+# Editores e sistema
+.claude/
+.idea/
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+Thumbs.db
