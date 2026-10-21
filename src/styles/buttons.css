@@ -1,0 +1,76 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 48px;
+  padding: 0.7rem 1.25rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-stretch: 108%;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1.1;
+  white-space: nowrap;
+  border: 2px solid var(--ink);
+  transition:
+    transform 0.15s ease,
+    background-color 0.15s ease,
+    color 0.15s ease;
+}
+.btn svg {
+  width: 18px;
+  height: 18px;
+  flex: none;
+}
+.btn-primary {
+  background: var(--ink);
+  color: var(--bg);
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+}
+.btn-ghost {
+  color: var(--ink);
+  background: linear-gradient(var(--ink), var(--ink)) left / 0% 100% no-repeat;
+  transition:
+    background-size 0.35s var(--ease-out),
+    color 0.25s ease,
+    transform 0.15s ease;
+}
+.btn-ghost:hover {
+  background-size: 100% 100%;
+  color: var(--bg);
+}
+.btn small {
+  font-weight: 500;
+  opacity: 0.75;
+  font-size: 0.8em;
+}
+.btn-sm {
+  min-height: 40px;
+  padding: 0.45rem 1rem;
+  font-size: 0.9rem;
+  border-width: 1.5px;
+}
+
+.ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+@media (max-width: 560px) {
+  .ctas {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .ctas > :first-child:nth-last-child(odd) {
+    grid-column: 1 / -1;
+  }
+  .ctas .btn {
+    padding-inline: 0.75rem;
+  }
+  .ctas .btn small {
+    display: none;
+  }
+}

@@ -1,0 +1,17 @@
+/*
+  Design system · direção "Mural"
+  Paleta tirada do mural da fotografia: verde, ocre, roxo e azul sobre branco e preto.
+  Uma família tipográfica (Archivo variável): a expressividade vem da largura (wdth) e do peso.
+  Temas: cada token declara os dois valores com light-dark(); o atributo data-theme
+  (definido pelo botão de tema) só fixa o color-scheme.
+*/
+
+@import './styles/tokens.css';
+@import './styles/base.css';
+@import './styles/header.css';
+@import './styles/buttons.css';
+@import './styles/hero.css';
+@import './styles/sections.css';
+@import './styles/contact.css';
+@import './styles/footer.css';
+@import './styles/motion.css';

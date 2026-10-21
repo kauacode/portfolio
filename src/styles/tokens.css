@@ -1,0 +1,63 @@
+:root {
+  color-scheme: light dark;
+
+  --bg: light-dark(#ffffff, #121112);
+  --bg-soft: light-dark(#f5f4f2, #1b191c);
+  --ink: light-dark(#121112, #f3f1f4);
+  --ink-2: light-dark(#3b383d, #d4d0d7);
+  --muted: light-dark(#5f5b63, #a39ea8);
+  --line: light-dark(#e4e1e6, #2e2b31);
+
+  /* formas do mural (preenchimento, não texto) */
+  --green: light-dark(#0c7c43, #1e9455);
+  --ochre: light-dark(#d39a26, #e0a63a);
+  --purple: light-dark(#4b2b85, #6a46b5);
+  --blue: light-dark(#2a8bd0, #3a9be0);
+
+  /* variantes com contraste AA para texto sobre --bg */
+  --green-text: light-dark(#0a6b39, #63cf94);
+  --ochre-text: light-dark(#855700, #f1c063);
+  --purple-text: light-dark(#4b2b85, #bea8f0);
+  --blue-text: light-dark(#1b66a1, #82c3f1);
+
+  --field-purple: light-dark(#4b2b85, #33205f);
+  --on-purple: #ffffff;
+  --on-purple-2: light-dark(#ddd3f2, #d6cbee);
+  --field-ochre: light-dark(#d39a26, #c68c20);
+  --on-ochre: #121112;
+  --on-ochre-2: #3a2a08;
+  --on-ochre-btn: #f6e7c4;
+
+  --focus: light-dark(#1b66a1, #82c3f1);
+
+  --font: 'Archivo', 'Arial Narrow', Arial, 'Helvetica Neue', sans-serif;
+  --w-body: 100%;
+  --w-label: 86%;
+  --w-head: 116%;
+  --w-display: 125%;
+
+  --step--1: clamp(0.82rem, 0.79rem + 0.15vw, 0.9rem);
+  --step-0: clamp(1rem, 0.96rem + 0.2vw, 1.0625rem);
+  --step-1: clamp(1.15rem, 1.08rem + 0.35vw, 1.35rem);
+  --step-2: clamp(1.4rem, 1.25rem + 0.7vw, 1.85rem);
+  --step-3: clamp(2.1rem, 1.6rem + 2.6vw, 4.2rem);
+  --step-display: clamp(3rem, 1rem + 8.4vw, 8.6rem);
+
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2.5rem;
+  --space-5: clamp(3.5rem, 2rem + 6vw, 7.5rem);
+
+  --radius: 14px;
+  --container: 1240px;
+  --gutter: clamp(16px, 4vw, 48px);
+  --header-h: 64px;
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+:root[data-theme='light'] {
+  color-scheme: light;
+}
+:root[data-theme='dark'] {
+  color-scheme: dark;
+}

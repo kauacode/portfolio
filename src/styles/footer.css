@@ -1,0 +1,31 @@
+.site-footer {
+  padding-block: var(--space-4);
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+.footer-row nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* 404 */
+.nf {
+  min-height: 70vh;
+  display: grid;
+  align-content: center;
+  gap: var(--space-3);
+  padding-block: var(--space-5);
+}
+.nf h1 {
+  font-size: var(--step-display);
+  font-weight: 900;
+  font-stretch: var(--w-display);
+  line-height: 0.86;
+}
