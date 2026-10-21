@@ -1,0 +1,75 @@
+<div class="container header-row">
+  <a
+    class="brand"
+    [href]="nav.page()"
+    [attr.aria-label]="locale.text().home_label"
+    (click)="nav.home($event)"
+  >
+    <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+      <rect width="32" height="32" rx="8" fill="#121112" />
+      <path d="M5 15C5 9 9 5 15 5c0 6-4 10-10 10Z" fill="#d39a26" />
+      <path d="M27 27H13A14 14 0 0 1 27 13Z" fill="#2a8bd0" />
+      <rect x="19" y="5" width="8" height="5" rx="2.5" fill="#1e9455" />
+      <rect x="5" y="19" width="5" height="8" rx="2.5" fill="#7a55c4" />
+    </svg>
+    <span aria-hidden="true">{{ name }}</span>
+  </a>
+  <nav
+    #navElement
+    id="site-nav"
+    class="nav"
+    [class.is-open]="menuOpen()"
+    [attr.aria-label]="locale.text().nav_label"
+  >
+    <ul class="nav-list">
+      @for (section of sections(); track section.id) {
+        <li>
+          <a
+            [href]="nav.anchor(section.id)"
+            [attr.aria-current]="section.current ? 'true' : null"
+            (click)="menuOpen.set(false)"
+            >{{ section.label }}</a
+          >
+        </li>
+      }
+    </ul>
+  </nav>
+  <div class="tools">
+    <div class="lang" role="group" [attr.aria-label]="locale.text().lang_label">
+      @for (option of languages(); track option.lang) {
+        <a
+          [href]="nav.page(option.lang)"
+          [attr.lang]="option.htmlLang"
+          [attr.hreflang]="option.current ? null : option.htmlLang"
+          [attr.aria-current]="option.current ? 'page' : null"
+          [title]="option.name"
+          (click)="option.current ? nav.home($event) : nav.switchLanguage(option.lang, $event)"
+          >{{ option.code }}</a
+        >
+      }
+    </div>
+    <button
+      #themeButton
+      class="icon-btn theme-btn"
+      type="button"
+      [attr.aria-pressed]="theme.effective() === 'dark'"
+      [attr.aria-label]="locale.text().theme_label"
+      [title]="locale.text().theme_label"
+      (click)="theme.toggle(themeButton)"
+    >
+      <svg appIcon="moon"></svg><svg appIcon="sun"></svg>
+    </button>
+    <a appCvLink class="btn btn-ghost btn-sm header-cv" [compact]="true"></a>
+    <button
+      #menuButton
+      class="icon-btn menu-btn"
+      type="button"
+      [attr.aria-expanded]="menuOpen()"
+      aria-controls="site-nav"
+      [attr.aria-label]="menuOpen() ? locale.text().menu_close : locale.text().menu_open"
+      (click)="toggleMenu()"
+    >
+      <svg appIcon="menu"></svg>
+    </button>
+  </div>
+</div>
