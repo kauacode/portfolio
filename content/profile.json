@@ -1,0 +1,626 @@
+{
+  "site": {
+    "url": "https://kauabraccio.dev",
+    "show_github": false,
+    "updated": "2026-10"
+  },
+  "person": {
+    "name": "Kauã Braccio",
+    "full_name": "Kauã Henrique Braccio",
+    "alternate_names": ["Kaua Braccio", "Kauã Henrique Braccio", "Kaua Henrique Braccio"],
+    "title": {
+      "pt": "Engenheiro de Software",
+      "en": "Software Engineer"
+    },
+    "company": "CI&T",
+    "company_url": "https://ciandt.com",
+    "locality": "Campinas",
+    "region": "SP",
+    "country_code": "BR",
+    "email": "kauabraccio7@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/kauabraccio/",
+    "github": "https://github.com/kauacode",
+    "cv": {
+      "pt": "assets/docs/Kaua_Braccio_CV.pdf",
+      "en": null
+    },
+    "career_start": "2024-03",
+    "area": {
+      "pt": "Região de Campinas, SP",
+      "en": "Campinas area, Brazil"
+    }
+  },
+  "meta": {
+    "title": {
+      "pt": "Kauã Braccio · Engenheiro de Software | C#, .NET e AWS Serverless",
+      "en": "Kauã Braccio · Software Engineer | C#, .NET & AWS Serverless"
+    },
+    "description": {
+      "pt": "Engenheiro de software na CI&T. Desenvolvo APIs, integrações e aplicações Serverless em C#, .NET e AWS para o setor financeiro e bancário. 2× AWS Certified.",
+      "en": "Software engineer at CI&T. I build APIs, integrations and serverless applications with C#, .NET and AWS for the financial and banking sector. 2× AWS Certified."
+    },
+    "og_alt": {
+      "pt": "Kauã Braccio, Engenheiro de Software. C#, .NET e AWS Serverless.",
+      "en": "Kauã Braccio, Software Engineer. C#, .NET and AWS Serverless."
+    }
+  },
+  "hero": {
+    "lede": {
+      "pt": "Engenheiro de software com foco em C#, .NET e AWS Serverless. Desenvolvo APIs, integrações entre sistemas distribuídos e aplicações em nuvem para o setor financeiro e bancário.",
+      "en": "Software engineer focused on C#, .NET and AWS Serverless. I build APIs, distributed-system integrations and cloud applications for the financial and banking sector."
+    },
+    "sector": {
+      "pt": "setor bancário",
+      "en": "banking"
+    }
+  },
+  "about": {
+    "paragraphs": [
+      {
+        "pt": "Trabalho há mais de dois anos com desenvolvimento de software, a maior parte dele para o setor financeiro e bancário. Hoje, na CI&T, construo soluções Serverless em C# e .NET na AWS para um dos maiores bancos do Brasil, em projetos de modernização de sistemas e de adequação a exigências do Banco Central.",
+        "en": "I have been building software for more than two years, most of it for the financial and banking sector. Today, at CI&T, I build serverless solutions with C# and .NET on AWS for one of Brazil's largest banks, in system modernization and Central Bank compliance projects."
+      },
+      {
+        "pt": "Meu dia a dia passa por APIs REST, integração entre sistemas distribuídos (inclusive legado Mainframe), bancos SQL e NoSQL e observabilidade em produção. Já atuei com arquitetura BFF, CQRS e MediatR, e aplico SOLID e Clean Code para manter o código simples de evoluir.",
+        "en": "My day-to-day work covers REST APIs, distributed-system integration (including legacy mainframe), SQL and NoSQL databases and production observability. I have worked with BFF architecture, CQRS and MediatR, and I apply SOLID and Clean Code to keep code easy to evolve."
+      },
+      {
+        "pt": "Trabalho com Agentic SDLC: agentes de IA participam de todo o ciclo de vida do software, da especificação e do refinamento de requisitos ao código, aos testes, à revisão e à operação, sempre com validação humana. Combino essa abordagem com Specification-Driven Development (SDD), em que a especificação conduz a implementação e a verificação.",
+        "en": "I work with an agentic SDLC: AI agents take part in the whole software lifecycle, from specification and requirement refinement to code, tests, review and operations, always with human validation. I combine it with Specification-Driven Development (SDD), where the specification drives implementation and verification."
+      }
+    ],
+    "focus": [
+      {
+        "color": "blue",
+        "title": {
+          "pt": "Serverless na AWS",
+          "en": "Serverless on AWS"
+        },
+        "text": {
+          "pt": "Funções em C# e .NET no AWS Lambda, integradas a MongoDB e mensageria.",
+          "en": "C# and .NET functions on AWS Lambda, integrated with MongoDB and messaging."
+        }
+      },
+      {
+        "color": "purple",
+        "title": {
+          "pt": "APIs e arquitetura",
+          "en": "APIs & architecture"
+        },
+        "text": {
+          "pt": "APIs REST em .NET com BFF, CQRS e MediatR, consumidas por front-ends em Angular.",
+          "en": "REST APIs in .NET with BFF, CQRS and MediatR, consumed by Angular front-ends."
+        }
+      },
+      {
+        "color": "ochre",
+        "title": {
+          "pt": "Integração de sistemas",
+          "en": "System integration"
+        },
+        "text": {
+          "pt": "Conexão com plataformas externas, registradoras e legado Mainframe.",
+          "en": "Connections to external platforms, registries and legacy mainframe."
+        }
+      },
+      {
+        "color": "green",
+        "title": {
+          "pt": "Observabilidade",
+          "en": "Observability"
+        },
+        "text": {
+          "pt": "Logs, métricas e investigação de incidentes com CloudWatch, Datadog e Splunk.",
+          "en": "Logs, metrics and incident investigation with CloudWatch, Datadog and Splunk."
+        }
+      },
+      {
+        "color": "blue",
+        "title": {
+          "pt": "IA no ciclo de desenvolvimento",
+          "en": "AI across the lifecycle"
+        },
+        "text": {
+          "pt": "Agentic SDLC e SDD, da especificação à revisão e à operação.",
+          "en": "Agentic SDLC and SDD, from specification to review and operations."
+        }
+      }
+    ]
+  },
+  "experience": [
+    {
+      "company": "CI&T",
+      "url": "https://ciandt.com",
+      "color": "blue",
+      "location": {
+        "pt": "Campinas, SP · híbrido",
+        "en": "Campinas, SP · hybrid"
+      },
+      "roles": [
+        {
+          "title": {
+            "pt": "Desenvolvedor de Software Júnior",
+            "en": "Junior Software Developer"
+          },
+          "type": {
+            "pt": "Tempo integral",
+            "en": "Full-time"
+          },
+          "start": "2025-12",
+          "end": null,
+          "summary": {
+            "pt": "Desenvolvimento de soluções para um dos maiores bancos do Brasil, na modernização de sistemas bancários e na adequação a exigências regulatórias do Banco Central (BACEN).",
+            "en": "Building solutions for one of Brazil's largest banks, contributing to the modernization of banking systems and to regulatory requirements set by the Central Bank of Brazil (BACEN)."
+          },
+          "bullets": [
+            {
+              "pt": "Construção de soluções Serverless com C#, .NET e AWS Lambda integradas ao MongoDB, aplicando Clean Code e SOLID.",
+              "en": "Building serverless solutions with C#, .NET, AWS Lambda and MongoDB, applying Clean Code and SOLID principles."
+            },
+            {
+              "pt": "Integrações entre sistemas distribuídos, conectando APIs REST a plataformas externas de registradoras e ao ecossistema financeiro.",
+              "en": "Implementing integrations across distributed systems, connecting REST APIs to external registry platforms and other financial ecosystem services."
+            },
+            {
+              "pt": "Integração com sistemas legados (Mainframe): análise de dicionários de dados e mapeamento de layouts para processar corretamente as informações.",
+              "en": "Integrating with legacy mainframe systems: analyzing data dictionaries and mapping record layouts so information is processed correctly."
+            },
+            {
+              "pt": "Observabilidade com AWS CloudWatch: investigação e resolução de incidentes e acompanhamento de logs, comportamento e performance das aplicações.",
+              "en": "Cloud observability with AWS CloudWatch: investigating and resolving incidents and monitoring application logs, behavior and performance."
+            },
+            {
+              "pt": "Desenvolvimento com Agentic SDLC e Specification-Driven Development (SDD): agentes de IA no ciclo de vida inteiro, do refinamento de requisitos à entrega.",
+              "en": "Development with an agentic SDLC and Specification-Driven Development (SDD): AI agents across the whole lifecycle, from requirement refinement to delivery."
+            }
+          ],
+          "stack": [
+            "C#",
+            ".NET",
+            "ASP.NET Core",
+            "AWS Lambda",
+            "MongoDB",
+            "REST APIs",
+            "AWS CloudWatch",
+            "RabbitMQ",
+            "GitHub Actions",
+            "GitLab",
+            "CI/CD"
+          ]
+        },
+        {
+          "title": {
+            "pt": "Estagiário em Desenvolvimento de Software",
+            "en": "Software Developer Intern"
+          },
+          "type": {
+            "pt": "Estágio · programa Next Gen AI",
+            "en": "Internship · Next Gen AI program"
+          },
+          "start": "2025-03",
+          "end": "2025-12",
+          "summary": {
+            "pt": "Desenvolvimento full stack de soluções para investimentos e criptoativos em um dos maiores bancos da América Latina. Efetivado como desenvolvedor júnior em dezembro de 2025.",
+            "en": "Full-stack development for the investments and digital assets (crypto) area of one of Latin America's largest banks. Hired as a junior developer in December 2025."
+          },
+          "bullets": [
+            {
+              "pt": "APIs REST em C# e .NET Core estruturadas em arquitetura BFF (Backend-for-Frontend), com CQRS e MediatR e princípios SOLID.",
+              "en": "Building and maintaining REST APIs with C# and .NET Core in a BFF (Backend-for-Frontend) architecture, using CQRS and MediatR and following SOLID principles."
+            },
+            {
+              "pt": "Interfaces web responsivas em Angular e TypeScript, implementando componentes de Design System a partir de protótipos no Figma.",
+              "en": "Creating responsive web interfaces with Angular and TypeScript, implementing Design System components from Figma prototypes."
+            },
+            {
+              "pt": "Monitoramento e análise de performance com Datadog e Splunk, contribuindo para a observabilidade e a estabilidade dos serviços.",
+              "en": "Monitoring application performance with Datadog and Splunk, contributing to observability and service reliability."
+            },
+            {
+              "pt": "Ambiente ágil com práticas de DevOps, usando Git e pipelines de CI/CD para integração e entrega contínua.",
+              "en": "Working in an agile environment with DevOps practices, using Git and CI/CD pipelines for continuous integration and delivery."
+            }
+          ],
+          "stack": [
+            "C#",
+            ".NET",
+            "ASP.NET Core",
+            "Angular",
+            "TypeScript",
+            "RxJS",
+            "Jest",
+            "AWS",
+            "BFF",
+            "CQRS",
+            "MediatR",
+            "Datadog",
+            "Splunk",
+            "GitHub Actions"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Assist Soluções em TI",
+      "url": null,
+      "color": "ochre",
+      "location": {
+        "pt": "Jaguariúna, SP · presencial",
+        "en": "Jaguariúna, SP · on-site"
+      },
+      "roles": [
+        {
+          "title": {
+            "pt": "Desenvolvedor Web Júnior",
+            "en": "Junior Web Developer"
+          },
+          "type": {
+            "pt": "Tempo integral",
+            "en": "Full-time"
+          },
+          "start": "2024-10",
+          "end": "2024-12",
+          "summary": null,
+          "bullets": [],
+          "stack": []
+        },
+        {
+          "title": {
+            "pt": "Estagiário em Desenvolvimento Web",
+            "en": "Web Developer Intern"
+          },
+          "type": {
+            "pt": "Estágio",
+            "en": "Internship"
+          },
+          "start": "2024-03",
+          "end": "2024-09",
+          "summary": {
+            "pt": "Desenvolvimento e manutenção de sistemas web para clientes, do levantamento de requisitos ao suporte. Promovido a desenvolvedor júnior em outubro de 2024.",
+            "en": "Development and maintenance of web systems for clients, from requirements gathering to support. Promoted to junior developer in October 2024."
+          },
+          "bullets": [
+            {
+              "pt": "Desenvolvimento e manutenção de sistemas web com PHP, JavaScript, HTML, CSS e SQL/MySQL.",
+              "en": "Developing and maintaining web systems with PHP, JavaScript, HTML/CSS and SQL/MySQL."
+            },
+            {
+              "pt": "Levantamento de requisitos e implementação de melhorias e correções alinhadas às necessidades dos clientes.",
+              "en": "Gathering requirements and implementing improvements and fixes aligned with each client's needs."
+            },
+            {
+              "pt": "Validação de funcionalidades, suporte técnico e atendimento direto aos usuários.",
+              "en": "Validating features, providing technical support and assisting users directly."
+            }
+          ],
+          "stack": ["PHP", "JavaScript", "HTML", "CSS", "SQL", "MySQL"]
+        }
+      ]
+    },
+    {
+      "company": "Centro Nacional de Pesquisa em Energia e Materiais",
+      "short": "CNPEM",
+      "url": "https://cnpem.br",
+      "color": "green",
+      "location": {
+        "pt": "Campinas, SP · presencial",
+        "en": "Campinas, SP · on-site"
+      },
+      "roles": [
+        {
+          "title": {
+            "pt": "Estagiário Técnico em Eletrônica",
+            "en": "Electronics Technician Intern"
+          },
+          "type": {
+            "pt": "Estágio",
+            "en": "Internship"
+          },
+          "start": "2023-02",
+          "end": "2023-12",
+          "summary": {
+            "pt": "Planejamento e desenvolvimento de soluções de automação com programação de CLP em linguagem SCL.",
+            "en": "Planning and development of automation solutions by programming PLCs in the SCL language."
+          },
+          "bullets": [
+            {
+              "pt": "Sistema de notificações por SMS para alertar sobre falhas nos subsistemas das Linhas de Luz, permitindo resposta rápida a problemas críticos.",
+              "en": "SMS notification system to alert about failures in beamline subsystems, enabling quick responses to critical issues."
+            },
+            {
+              "pt": "Sistema de controle e monitoramento com sensor de barreira para detectar amostras nos cartuchos dos laboratórios.",
+              "en": "Control and monitoring system using barrier sensors to detect samples in laboratory cartridges."
+            },
+            {
+              "pt": "Apresentação dos projetos no Congresso de Estudantes do CNPEM (CEC) 2023.",
+              "en": "Presented the projects at the CNPEM Student Congress (CEC) 2023."
+            }
+          ],
+          "stack": [
+            {
+              "pt": "CLP",
+              "en": "PLC"
+            },
+            "SCL",
+            {
+              "pt": "Automação industrial",
+              "en": "Industrial automation"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "kind": {
+        "pt": "Bacharelado",
+        "en": "Bachelor's degree"
+      },
+      "degree": {
+        "pt": "Ciência da Computação",
+        "en": "Computer Science"
+      },
+      "school": "Centro Universitário de Jaguariúna",
+      "short": "UniFAJ",
+      "location": "Jaguariúna, SP",
+      "start": 2023,
+      "end": 2026,
+      "status": "in_progress",
+      "schedule": {
+        "pt": "Noturno",
+        "en": "Evening program"
+      },
+      "color": "blue",
+      "summary": {
+        "pt": "Base em engenharia de software, arquitetura de software e fundamentos da computação, cursada em paralelo ao trabalho.",
+        "en": "Foundations in software engineering, software architecture and computer science, taken alongside work."
+      },
+      "topics": [
+        {
+          "pt": "Engenharia de software",
+          "en": "Software engineering"
+        },
+        {
+          "pt": "Arquitetura de software",
+          "en": "Software architecture"
+        },
+        {
+          "pt": "Fundamentos da computação",
+          "en": "Computer science fundamentals"
+        },
+        "C",
+        "SQL"
+      ]
+    },
+    {
+      "kind": {
+        "pt": "Curso técnico",
+        "en": "Technical degree"
+      },
+      "degree": {
+        "pt": "Técnico em Eletrônica",
+        "en": "Electronics Technician"
+      },
+      "school": "Escola SENAI Jaguariúna",
+      "short": "SENAI",
+      "location": "Jaguariúna, SP",
+      "start": 2021,
+      "end": 2022,
+      "status": "completed",
+      "schedule": null,
+      "color": "green",
+      "summary": {
+        "pt": "Formação técnica em eletrônica, microcontroladores e Arduino, base para o estágio em automação no CNPEM.",
+        "en": "Technical training in electronics, microcontrollers and Arduino, the foundation for the automation internship at CNPEM."
+      },
+      "topics": [
+        {
+          "pt": "Eletrônica",
+          "en": "Electronics"
+        },
+        {
+          "pt": "Microcontroladores",
+          "en": "Microcontrollers"
+        },
+        "Arduino"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "name": {
+        "pt": "Português",
+        "en": "Portuguese"
+      },
+      "level": {
+        "pt": "Nativo",
+        "en": "Native"
+      },
+      "color": "ochre"
+    },
+    {
+      "name": {
+        "pt": "Inglês",
+        "en": "English"
+      },
+      "level": {
+        "pt": "Intermediário",
+        "en": "Intermediate"
+      },
+      "color": "blue"
+    }
+  ],
+  "certifications": {
+    "featured": [
+      {
+        "name": "AWS Certified Cloud Practitioner",
+        "issuer": "Amazon Web Services",
+        "issued": "2026-10-12",
+        "expires": "2029-10-12",
+        "url": "https://www.credly.com/badges/2a9957ad-24de-47f9-9ab9-7b49f49fa3c2",
+        "color": "ochre",
+        "note": {
+          "pt": "Serviços AWS, arquitetura em nuvem, segurança, redes, alta disponibilidade e custos.",
+          "en": "AWS services, cloud architecture, security, networking, high availability and cost optimization."
+        }
+      },
+      {
+        "name": "AWS Certified AI Practitioner",
+        "code": "AIF-C01",
+        "issuer": "Amazon Web Services",
+        "issued": "2026-09-06",
+        "expires": "2029-09-06",
+        "url": "https://www.credly.com/badges/a2c3e1b5-56f1-494c-b7f8-6b65cc0105e6",
+        "color": "green",
+        "note": {
+          "pt": "Machine Learning, IA generativa, Amazon Bedrock, SageMaker e IA responsável.",
+          "en": "Machine learning, generative AI, Amazon Bedrock, SageMaker and responsible AI."
+        }
+      },
+      {
+        "name": "Claude Architect Foundations",
+        "issuer": "O'Reilly",
+        "issued": "2026-07-16",
+        "expires": null,
+        "url": "https://www.credly.com/badges/e3358200-9775-40a6-bd67-ed7766e0f9c0",
+        "color": "blue",
+        "note": null
+      }
+    ],
+    "others": [
+      {
+        "name": "AWS Partner: Technical Accredited",
+        "issuer": "Amazon Web Services"
+      },
+      {
+        "name": "AWS Cloud Quest: Generative AI Practitioner",
+        "issuer": "Amazon Web Services"
+      },
+      {
+        "name": "AWS Cloud Quest: Cloud Practitioner",
+        "issuer": "Amazon Web Services"
+      },
+      {
+        "name": {
+          "pt": "RabbitMQ: de A a Z com exemplos",
+          "en": "RabbitMQ: A to Z with examples"
+        },
+        "issuer": "Udemy"
+      },
+      {
+        "name": {
+          "pt": "Microsserviços com Spring Cloud",
+          "en": "Microservices with Spring Cloud"
+        },
+        "issuer": "Rocketseat"
+      },
+      {
+        "name": {
+          "pt": "Fundamentos da Cultura DevOps",
+          "en": "DevOps Culture Fundamentals"
+        },
+        "issuer": "Rocketseat"
+      }
+    ]
+  },
+  "skills": {
+    "core": [
+      {
+        "name": "C#",
+        "match": ["C#"],
+        "detail": {
+          "pt": "APIs e funções Serverless",
+          "en": "APIs and serverless functions"
+        }
+      },
+      {
+        "name": ".NET",
+        "match": [".NET"],
+        "detail": "ASP.NET Core, MediatR"
+      },
+      {
+        "name": "AWS",
+        "match": ["AWS", "AWS Lambda", "AWS CloudWatch"],
+        "detail": "Lambda, CloudWatch"
+      },
+      {
+        "name": "MongoDB",
+        "match": ["MongoDB"],
+        "detail": {
+          "pt": "Persistência NoSQL",
+          "en": "NoSQL persistence"
+        }
+      },
+      {
+        "name": "Angular",
+        "match": ["Angular"],
+        "detail": {
+          "pt": "Componentes de Design System",
+          "en": "Design System components"
+        }
+      },
+      {
+        "name": "TypeScript",
+        "match": ["TypeScript"],
+        "detail": {
+          "pt": "Front-end com RxJS e Jest",
+          "en": "Front-end with RxJS and Jest"
+        }
+      }
+    ],
+    "groups": [
+      {
+        "title": {
+          "pt": "Arquitetura e padrões",
+          "en": "Architecture & patterns"
+        },
+        "items": ["REST APIs", "BFF", "CQRS", "MediatR", "SOLID", "Clean Code", "DDD"]
+      },
+      {
+        "title": {
+          "pt": "Cloud e integração",
+          "en": "Cloud & integration"
+        },
+        "items": [
+          "AWS Lambda",
+          "Serverless",
+          "Amazon SQS",
+          "RabbitMQ",
+          {
+            "pt": "Integração com Mainframe",
+            "en": "Mainframe integration"
+          }
+        ]
+      },
+      {
+        "title": {
+          "pt": "Observabilidade",
+          "en": "Observability"
+        },
+        "items": ["AWS CloudWatch", "Datadog", "Splunk"]
+      },
+      {
+        "title": {
+          "pt": "Dados",
+          "en": "Data"
+        },
+        "items": ["MongoDB", "SQL", "MySQL"]
+      },
+      {
+        "title": {
+          "pt": "Entrega e qualidade",
+          "en": "Delivery & quality"
+        },
+        "items": ["Git", "GitHub Actions", "GitLab", "CI/CD", "Jest"]
+      },
+      {
+        "title": {
+          "pt": "IA no desenvolvimento",
+          "en": "AI in development"
+        },
+        "items": ["Agentic SDLC", "Specification-Driven Development", "Amazon Bedrock"]
+      }
+    ]
+  }
+}
