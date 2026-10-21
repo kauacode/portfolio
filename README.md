@@ -109,11 +109,7 @@ Tudo fica em `content/profile.json`. Cada texto aceita `{"pt": "...", "en": "...
 
 Antes do primeiro deploy, defina o domínio final em `site.url` (`content/profile.json`). Ele é usado em canonical, hreflang, Open Graph, sitemap e JSON-LD. O valor atual, `https://kauabraccio.dev`, é provisório. O site usa caminhos absolutos, então deve ser servido na raiz de um domínio.
 
-| Plataforma       | Configuração                                                                                         |
-| ---------------- | ---------------------------------------------------------------------------------------------------- |
-| Cloudflare Pages | build `npm run build`, saída `dist`, variável `NODE_VERSION=24`. O `_headers` é aplicado.            |
-| Netlify          | já configurado em `netlify.toml`. O `_headers` é aplicado.                                           |
-| GitHub Pages     | workflow `.github/workflows/pages.yml` (fonte "GitHub Actions", domínio próprio). Não lê `_headers`. |
+O site é publicado na Cloudflare (Workers com arquivos estáticos), configurada em `wrangler.jsonc`. O repositório está conectado pelo Workers Builds: cada push na `master` roda `npm run build` e `npx wrangler deploy`, e o `_headers` gerado no build é aplicado.
 
 O workflow `.github/workflows/ci.yml` roda lint, tipos, formatação, testes, build e os testes da saída a cada push e pull request.
 
