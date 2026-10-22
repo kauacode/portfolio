@@ -10,9 +10,18 @@ export function structuredData(profile: Profile, lang: Lang, today: Date) {
       ...profile.skillGroups.flatMap((group) => group.items.map((item) => item[lang])),
     ]),
   ];
-  return {
-    '@context': 'https://schema.org',
+  // WebSite com nome: sem ele, o Google mostra "Cloudflare" como nome do site nos resultados
+  const website = {
+    '@type': 'WebSite',
+    '@id': `${site.url}/#website`,
+    name: person.name,
+    alternateName: person.alternateNames,
+    url: `${site.url}/`,
+    inLanguage: Object.values(HTML_LANG),
+  };
+  const profilePage = {
     '@type': 'ProfilePage',
+    isPartOf: { '@id': website['@id'] },
     url: site.url + PAGE_PATHS[lang],
     inLanguage: HTML_LANG[lang],
     dateModified: `${YearMonth.of(today).iso()}-${String(today.getDate()).padStart(2, '0')}`,
@@ -53,4 +62,5 @@ export function structuredData(profile: Profile, lang: Lang, today: Date) {
       sameAs: [person.linkedin, ...(site.showGithub ? [person.github] : [])],
     },
   };
+  return { '@context': 'https://schema.org', '@graph': [website, profilePage] };
 }

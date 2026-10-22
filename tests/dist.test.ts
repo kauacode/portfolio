@@ -58,7 +58,13 @@ describe('páginas pré-renderizadas', () => {
     for (const doc of Object.values(docs)) {
       const blocks = doc.querySelectorAll('script[type="application/ld+json"]');
       assert.equal(blocks.length, 1);
-      const person = JSON.parse(blocks[0].textContent!).mainEntity;
+      const graph = JSON.parse(blocks[0].textContent!)['@graph'] as Record<string, unknown>[];
+      const website = graph.find((node) => node['@type'] === 'WebSite');
+      assert.equal(website?.['name'], 'Kauã Braccio');
+      const person = graph.find((node) => node['@type'] === 'ProfilePage')?.['mainEntity'] as {
+        name: string;
+        hasCredential: unknown[];
+      };
       assert.equal(person.name, 'Kauã Braccio');
       assert.equal(person.hasCredential.length, 3);
     }
