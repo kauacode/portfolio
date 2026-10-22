@@ -1,5 +1,4 @@
 import type { Lang, Profile } from '../content/profile.model';
-import { YearMonth } from '../dates';
 import { HTML_LANG, PAGE_PATHS } from '../i18n/locale';
 
 export function structuredData(profile: Profile, lang: Lang, today: Date) {
@@ -24,7 +23,7 @@ export function structuredData(profile: Profile, lang: Lang, today: Date) {
     isPartOf: { '@id': website['@id'] },
     url: site.url + PAGE_PATHS[lang],
     inLanguage: HTML_LANG[lang],
-    dateModified: `${YearMonth.of(today).iso()}-${String(today.getDate()).padStart(2, '0')}`,
+    dateModified: today.toISOString(),
     mainEntity: {
       '@type': 'Person',
       '@id': `${site.url}/#person`,
